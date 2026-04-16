@@ -144,7 +144,7 @@ ng serve
 
   * Users
   * Products
-  * Categories
+  * CartItems
   * Orders
   * OrderItems
 
@@ -155,6 +155,3 @@ ng serve
 * Payment Gateway Integration
 * Real-time order tracking
 * Admin dashboard analytics
-* Mobile app version
-
----
