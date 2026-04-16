@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #b45309; /* Bakery Gold */
+  --bakery-cream: #fff7ed;
+  --bakery-dark: #1e1b4b;
+  --bakery-crust: #78350f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bakery-cream);
+  color: #1e293b;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.glass {
+  background: rgba(255, 247, 237, 0.6); /* Bakery Cream Glass */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(180, 83, 9, 0.1);
+}
+
+.btn-primary {
+  @apply bg-primary-600 text-white px-4 py-2 rounded-lg font-medium transition-all hover:bg-primary-700 active:scale-95 shadow-lg shadow-primary-500/30;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all;
+}
