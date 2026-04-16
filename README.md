@@ -1,44 +1,160 @@
-# Retail_Ordering_Website_
+# 🍕 Retail Ordering Website (Full-Stack .NET Project)
 
-A seamless retail ordering platform designed for a pizza and beverage outlet. This application enables customers to browse menus, manage a shopping cart, and place secure orders while maintaining real-time inventory synchronization.
--------------------
+## 📌 Overview
 
-# 🚀 Key Features:
+This project is a **Full-Stack Retail Ordering Web Application** that allows customers to browse, order, and receive items such as **Pizza, Cold Drinks, and Breads** seamlessly.
+It ensures secure, efficient operations with a scalable backend and responsive frontend.
 
-# Customer Enablement:
+---
 
-1. Menu Exploration: Browse through various brands, categories (Pizza, Cold Drinks, Breads), and packaging options.
+## 🚀 Tech Stack
 
-2. Seamless Ordering: Integrated shopping cart and streamlined checkout process.
+### Frontend
 
-3. Order History: View past orders and utilize the "Quick Reorder" feature (Stretch).
+* Angular Framework
+* TypeScript / JavaScript
 
-4.Promotions: Support for coupons, loyalty points, and seasonal offers (Stretch).
+### Backend
 
-------------------
+* ASP.NET Core Web API (C#)
+* Entity Framework Core
 
+### Database
 
-# Technical Core
+* SQL Server
 
-1. Real-time Inventory: Automatic updates to stock levels upon order confirmation.
+---
 
-2. Secure API: ASP.NET Core Web API protected by Authentication, Authorization, and Rate Limiting.
+## 🎯 Problem Statement
 
-3.Validated Endpoints: RESTful architecture documented and tested via Swagger and Postman.
+Build a retail ordering system that enables:
 
-4.Automated Notifications: Email confirmation sent upon successful order placement (Stretch).
+* Seamless browsing and ordering experience
+* Secure and efficient backend operations
+* Inventory management and order processing
 
-# 🛠️ Technology Stack
+---
 
-LayerTechnologyFrontendAngular Framework, TypeScript, RxJSBackendASP.NET Core Web API (C#)ORMEntity Framework CoreDatabaseSQL ServerDocumentationSwagger / OpenAPIVersion ControlGitHub🏗️ Getting StartedPrerequisites.NET 8.0 SDK or higherNode.js (v18+ recommended)Angular CLISQL ServerInstallation & SetupClone the RepositoryBashgit clone https://github.com/your-username/retail-ordering-website.git
-cd retail-ordering-website
-Database ConfigurationUpdate the ConnectionStrings in appsettings.json within the API project to point to your local SQL Server instance.JSON"ConnectionStrings": {
-  "DefaultConnection": "Server=YOUR_SERVER;Database=RetailOrderDB;Trusted_Connection=True;"
-}
-Backend SetupBashcd Backend/ApiProject
-dotnet ef database update
+## ✨ Core Features
+
+### 🧑‍💻 Customer Enablement
+
+* Browse menu items (Pizza, Drinks, Breads)
+* Add items to cart
+* Place and manage orders
+
+### ⚙️ System Features
+
+* Centralized management of:
+
+  * Brands
+  * Categories
+  * Packaging
+* Automatic inventory updates after order confirmation
+* RESTful APIs for all operations
+* API testing via Swagger/Postman
+
+### 🔐 Security
+
+* Authentication & Authorization (JWT-based)
+* Secure API endpoints
+* Rate limiting for API protection
+
+### 🗂️ Development & Version Control
+
+* Clean architecture and modular design
+* Source code maintained using GitHub
+
+---
+
+## 🌟 Stretch Features (Optional Enhancements)
+
+* 📧 Email notifications for order confirmation
+* 📜 Order history & quick reorder
+* 🎁 Promotions system:
+
+  * Coupons
+  * Loyalty points
+  * Seasonal offers
+
+---
+
+## 🏗️ Project Architecture
+
+```
+Frontend (Angular)
+        ↓
+ASP.NET Core Web API
+        ↓
+Entity Framework Core
+        ↓
+SQL Server Database
+```
+
+---
+
+## ⚡ Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+---
+
+### 2️⃣ Backend Setup (.NET Core)
+
+```bash
+cd Backend
+dotnet restore
+dotnet build
 dotnet run
-Frontend SetupBashcd Frontend/AngularProject
+```
+
+* Update `appsettings.json` with your SQL Server connection string
+* Run migrations (if applicable)
+
+---
+
+### 3️⃣ Frontend Setup (Angular)
+
+```bash
+cd Frontend
 npm install
 ng serve
-📡 API DocumentationOnce the backend is running, you can access the interactive Swagger UI to explore the API endpoints:http://localhost:XXXX/swagger/index.html📂 Project Structure/Frontend: Angular source code, components, and services./Backend: ASP.NET Core controllers, EF Core Models, and Data Context./Docs: Postman collections and design documents.
+```
+
+* Navigate to: `http://localhost:4200`
+
+---
+
+## 📡 API Testing
+
+* Swagger UI: `http://localhost:<port>/swagger`
+* Use Postman for testing endpoints
+
+---
+
+## 📊 Database
+
+* SQL Server used for persistent storage
+* Tables include:
+
+  * Users
+  * Products
+  * Categories
+  * Orders
+  * OrderItems
+
+---
+
+## 📌 Future Improvements
+
+* Payment Gateway Integration
+* Real-time order tracking
+* Admin dashboard analytics
+* Mobile app version
+
+---
